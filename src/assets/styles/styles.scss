@@ -1,0 +1,436 @@
+@import 'variable.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: $color;
+  background: $background;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  max-width: $container-width;
+  padding: 0 $padding;
+  margin: 0 auto;
+}
+
+.flex-j {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-jc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+button {
+  padding: $padding/4 $padding/2;
+  white-space: nowrap;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .v-main-categori {
+    display: none;
+  }
+
+  .v-catalog {
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category-btn {
+
+    display: block;
+
+  }
+
+  .tovar {
+    display: block;
+    width: 100%;
+    border: $border;
+    border-radius: $radius*2;
+  }
+
+  .tovar__cart-imgs {
+    padding-right: $padding/2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .v-opisanie-tovara {
+    padding-bottom: $padding;
+    ;
+  }
+
+  .por-product__cart {
+
+    flex-direction: column;
+  }
+
+  .por-product__cart-img {
+    max-width: 100%;
+    max-height: 100%;
+    border: $border;
+    margin-right: 0;
+    border-radius: $radius;
+    padding: $padding/3;
+  }
+
+  .por-product__cart-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 0;
+    align-self: flex-start;
+  }
+
+  .por-imger {
+    max-width: 100%;
+  }
+
+  .por-product__card-buy {
+    min-height: 0px;
+    padding-top: $padding;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kolichestvo {
+    padding: $padding/2 0;
+  }
+
+  .por-btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .por-prise {
+    color: blue;
+    font-size: 20px;
+  }
+
+  .redactirovanie {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .por-cart-title {
+    padding: $padding/4*5 0;
+    text-align: center;
+  }
+
+  .kol {
+    font-size: 28px;
+    padding: 0 $padding;
+  }
+
+  .cart-right-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .f-input {
+    height: 30px;
+    width: 55px;
+    padding: $padding/3;
+    margin: 0 $padding/2;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .v-main-categori {
+    display: none;
+  }
+
+  .v-catalog {
+    width: 100%;
+  }
+
+  .product__cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flex-colr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cart-title {
+    text-align: center;
+    padding: $padding 0;
+  }
+
+  .product__cart-img {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    margin-right: 0;
+    border-radius: $radius;
+    padding: $padding/3;
+  }
+
+  .imger {
+    max-width: none;
+    width: 100%;
+  }
+
+  .product__card-buy {
+    min-height: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .kolichestvo {
+    padding: $padding 0;
+  }
+
+  .prise {
+    padding-top: $padding;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category-btn {
+
+    display: block;
+
+  }
+
+  .cart-title {
+    font-size: 18px;
+  }
+
+  .flex-colr ul {
+    display: none;
+  }
+
+  .prise {
+    padding: 0;
+  }
+
+  .tovar {
+    display: block;
+    width: 100%;
+    border: $border;
+    border-radius: $radius*2;
+  }
+
+  .tovar__cart-imgs {
+    padding-right: $padding/2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .v-opisanie-tovara {
+    padding-bottom: $padding;
+    ;
+  }
+
+  .opisanie-tovara__title {
+    font-size: 18px;
+  }
+
+  .vnalicii {
+    font-size: 16px;
+  }
+
+  .tsena {
+
+    font-size: 18px;
+  }
+
+  .tovar-btns {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  button+button {
+    margin-left: 9px;
+  }
+
+  .tab {
+    width: 100%;
+    height: 60%;
+    table-layout: fixed;
+    margin: 30px;
+    margin-left: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+
+  .por-product__cart {
+
+    flex-direction: column;
+  }
+
+  .por-product__cart-img {
+    max-width: 100%;
+    max-height: 100%;
+    border: $border;
+    margin-right: 0;
+    border-radius: $radius;
+    padding: $padding/3;
+  }
+
+  .por-product__cart-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 0;
+    align-self: flex-start;
+  }
+
+  .por-imger {
+    max-width: 100%;
+  }
+
+  .por-product__card-buy {
+    min-height: 0px;
+    padding-top: $padding;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kolichestvo {
+    padding: $padding/2 0;
+  }
+
+  .por-btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .por-prise {
+    color: blue;
+    font-size: 20px;
+  }
+
+  .redactirovanie {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .por-cart-title {
+    padding: $padding/4*5 0;
+    text-align: center;
+  }
+
+  .kol {
+    font-size: 28px;
+    padding: 0 $padding;
+  }
+
+  .cart-right-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .v-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-top: $padding !important;
+  }
+
+  .cart-right {
+    width: 100%;
+  }
+
+  .cart-left {
+    width: 100%;
+    max-height: 360px;
+    margin-right: 0;
+    margin-bottom: $padding;
+    border: $border;
+    border-radius: $radius;
+    padding: $padding/2;
+  }
+
+  .title-cart,
+  .por-cart-title,
+  .catr-title {
+    font-size: 18px;
+  }
+
+  .v-product-filter {
+    display: none;
+  }
+
+  .flex-j {
+    margin-top: $padding;
+  }
+}
