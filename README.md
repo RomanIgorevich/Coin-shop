@@ -3,10 +3,10 @@
 This project has been implemented:
 
 1 - adding an item to the cart; </br>
-2 - removing an item from the cart;
-3 - editing the number of items in the cart;
-4 - filtering by the selected price range;
-5 - product description;
+2 - removing an item from the cart; </br>
+3 - editing the number of items in the cart; </br>
+4 - filtering by the selected price range; </br>
+5 - product description; </br>
 6 - loading goods for certain categories.
 
 ## Project setup
