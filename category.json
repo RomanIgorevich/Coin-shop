@@ -1,0 +1,28 @@
+[{
+        "text": "Монеты Российской Федерации",
+        "category": "RF"
+    }, {
+        "text": "Монеты СССР",
+        "category": "SSSR"
+    }, {
+        "text": "Монеты США",
+        "category": "USA"
+    }, {
+        "text": "Монеты ЕВРО",
+        "category": "EVRO"
+    }, {
+        "text": "Монеты Германии",
+        "category": "GER"
+    }, {
+        "text": "Монеты Украины",
+        "category": "UA"
+    }, {
+        "text": "Монеты мира",
+        "category": "MM"
+    }, {
+        "text": "Антика и средневековье",
+        "category": "AiS"
+    }, {
+        "text": "Все монеты",
+        "category": ""
+    }]
